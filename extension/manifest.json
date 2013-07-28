@@ -1,0 +1,23 @@
+{
+	"name": "cakes",
+	"description": "makes view mode.",
+	"version": "0.1",
+	"manifest_version": 2,
+	"permissions": [
+		"contextMenus",
+		"https://cakes.mu/*"
+	],
+	"background": {
+		"scripts": [
+			"app.js"
+		]
+	},
+	 "content_scripts": [{
+		"matches": [
+			"https://cakes.mu/*"
+		],
+		"js": [
+			"jquery-2.0.2.min.js"
+		]
+	}]
+}
